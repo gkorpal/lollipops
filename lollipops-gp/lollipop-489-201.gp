@@ -5,6 +5,9 @@
 
 D=372894729;
 x=32154396145754238913904610480940111260824799292693486280615353684230401284; 
+if(!issquare(((3*x-2)^2+8)/(3*D)), error("assertion failed"));
+if(!issquare((4*(x^2-x+1)-x^2)/D), error("assertion failed"));
+
 if(!(x % 12 == 4), error("assertion failed"));
 p=x^2-x+1;
 q=x^2+1;

@@ -3,8 +3,11 @@
 \\ This script was tested with parisizemax = 8G.
 \\ By default all variables are global.
 
-D=8162838387;
-x=135291617420619872112751781485200134095300092426; 
+D=906982043;
+x=135291617420619872112751781485200134095300092426;
+if(!issquare(((3*x+1)^2+8)/(3*D)), error("assertion failed"));
+if(!issquare((4*(x^2+1)-(-x+1)^2)/D), error("assertion failed"));
+
 if(!(x % 12 == 6), error("assertion failed"));
 p=x^2-x+1;
 q=x^2+1;
